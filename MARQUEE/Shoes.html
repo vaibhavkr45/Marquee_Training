@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .parent{
+            left: 240px;
+            top: 250px;
+            position: relative;
+            background-color: white;
+            display: inline-block;
+            border-radius: 10px;
+            
+        }
+        .img{  
+            img{
+                border-radius: 10px;
+            }
+        }
+        .content{
+            font-size: 35px;
+        }
+        .price{
+            font-size: 20px;
+        }
+        button{
+            width: 150px;
+            left:250px;
+        }
+        .sale{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: brown;
+            border-radius: 5px;
+            padding: 3px;
+            color: white;
+        }
+        .heart{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            border-radius:50%;
+            background-color: rgba(0,0,0,80%);
+            height: 25px;
+            width: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "parent">
+        <div class="sale">Sale</div>
+        <div class="heart">❤️</div>
+        <div class = "img">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVB9HxhW_b1ANMzs7TB9w4fLojDoHO5FBYw&s"> 
+            <div class="content">Running Shoes</div>
+            <div class="price"> $200</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

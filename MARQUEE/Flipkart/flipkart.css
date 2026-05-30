@@ -1,0 +1,57 @@
+*{
+    margin:2px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.logo{
+    display: inline-block;
+    background-color: yellow;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin:10px;
+    }
+.travel{
+    display: inline-block;
+    background-color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+.location{
+    display: inline-block;
+    margin-left: 75%;
+    font-size: 19px;
+}
+.div{
+    display: inline-block;
+    height:40px;
+    width:50px;
+    background-color: blue;
+    margin: 10px;
+}
+input{
+    width: 70%;
+    margin: 15px;
+    padding: 9px;
+    border-radius: 8px;
+    border: solid rgb(146, 116, 223);
+}
+header{
+    border:2px solid black;
+}
+img{
+    height: 200px;
+    width:300px;
+    border-radius: 15px;
+    margin: 15px;
+}
+.rec{
+    height: auto;
+    width: auto;
+    background-color: chartreuse;
+}

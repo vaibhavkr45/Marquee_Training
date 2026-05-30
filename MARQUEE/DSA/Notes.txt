@@ -1,0 +1,72 @@
+Hashmap in Java:
+->it is used to store data in key and value pair.
+-> keys are unique.
+-> value can be duplicate.
+-> operation are data in OCD(delete,update,insertion).
+
+Creation of Hashmap:
+  import java.util.HashMap;
+  HashMap<data_type,data_type> map_variable_name = new HashMap<>();
+
+  mport java.util.*;
+class Main {
+    public static void main(String[] args) {
+        HashMap<Integer,String> map = new HashMap<>();
+        // To add element:
+        map.put(1,"John");
+        map.put(2,"Cena");
+        map.put(3,"rock");
+        System.out.println(map);
+        
+        
+        // To access element:
+        System.out.println(map.get(1));
+        
+        // To delete element:
+        map.remove(3);
+        System.out.println(map);
+        
+        // *****************************************************
+        String [] arr = {"hii","This","is","me"};
+        int n = arr.length;
+        for(int i = 0; i < n;i++){
+            System.out.println(arr[i]);
+        }
+        for(String x : arr){
+            System.out.println(x);
+        }
+        System.out.println(map.containsKey(3));
+        System.out.println(map.containsValue("John"));
+        System.out.println(map.containsValue("Harsh"));
+        
+        for(String x : map.values()){
+            System.out.println(x);
+        }
+        for(int x : map.keySet()){
+            System.out.println(x);
+        }
+    }
+}
+
+******************************************************************
+Kadane's Alorithm:
+ -> it is use d to find contiguous maximum subarray sum in O(n) time complexicity.
+-> At everymoment:
+  -> Either extend a current subarray.
+  ->Start new subarray from current element.
+
+Intuition
+    Iterating sum become neagtive , it can never help in  future.
+
+*****************************************************************************
+
+   # Moore's Voting Element:
+    -> It is used to find mojority element in a array.
+    -> The majority should be greater than n/2 .
+
+     => Basic Thought :- If we count unequal element we will cancel them. After cancelling only majority element will reamin at the end.
+  
+Algorithm:
+ -> If majority element == current element then count++.
+ -> If majority element != current element then count--.
+ -> If count == 0, update majority element with current element and update count to 1 for new majority element.
